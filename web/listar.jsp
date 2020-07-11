@@ -30,10 +30,8 @@
                     <th>Quantidade de Aulas </th>
                     <th>Nota </th>
                     <th>Ações</th>
-                        
                 </tr>
             </thead>
-            
             <tbody>
                 <%for(Disciplina dis : new DisciplinaController().buscar()) {%>
                 <tr>
@@ -44,14 +42,9 @@
                     <td> <%= dis.getTotal_aulas()%> </td>
                     <td> <%= dis.getNota() %> </td>
                     <td> <a class="btn btn-primary" href="consulta.jsp?id=<%=dis.getId()%>">Editar </a></td>
-                    
-                    
-                    
-                </tr>
+            </tr>
                 <%} %>
-                
-                
-            </tbody>
+          </tbody>
         </table>
     </body>
 </html>
